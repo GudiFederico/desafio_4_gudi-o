@@ -285,7 +285,7 @@ header {
     transition: all 1s ease-in-out;
 }
 
-.local:hover iframe{
+iframe:hover {
     transform: scale(2);
     height: 300px;
 }
