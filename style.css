@@ -112,23 +112,43 @@ header {
 
 .galeria_promos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 40px;
 }
 
 .oferta {
-    text-align: center;
+    height: 300px;
+    width: 300px;
     padding: 25px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: orange;
+    border-radius: 20px;
+    border: 5px solid orange;
 }
 
 .oferta img {
-    height: 200px;
-    padding: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
 }
 
 .oferta p {
     padding: 15px;
+    position: absolute;
+    width: auto;
+    transition: all 1s ease;
+    color: white;
 }
+
+.oferta img:hover {
+    transform: translateY(-400px);
+}
+
 
 
 
