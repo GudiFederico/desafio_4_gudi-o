@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/*header*/
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.nav a {
+    width: 30%;
+    padding: 5px;
+}
+.nav a img{
+    height: 30px;
+}
+
+.nav_menu {
+    display: flex;
+    width: 40%;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+    justify-content: space-around;
+}
+
+.nav_menu li a {
+    text-decoration: none;
+    color: orange;
+}
+
+.nav_menu li :hover {
+    background-color: rgb(104, 102, 102);
+}
+
+
+
+
+/* SECCION CARRUSEL DE IMAGENES*/
+
+.carrusel {
+    width: 100%;
+    height: 500px;
+    background-image: url(multimedia/img/carrusel-01.jpg);
+    background-size: cover;
+    margin: 70px 0px;
+}
+
+.carrusel h2 {
+    font-size: 80px;
+    color: white;
+    text-align: left;
+    width: 60%;
+    padding: 35px 35px 5px 95px;
+}
+
+.carrusel p {
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    width: 60%;
+    padding: 5px 100px;
+}
+
+
+
+/* seccion de promos*/
+
+.promos {
+    padding-top: 60px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.promos h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: orange;
+    width: 100%;
+}
+
+.promos h3 {
+    text-align: center;
+    color: orange;
+}
+
+.galeria_promos {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.oferta {
+    text-align: center;
+    padding: 25px;
+}
+
+.oferta img {
+    height: 200px;
+    padding: 15px;
+}
+
+.oferta p {
+    padding: 15px;
+}
+
+
+
+/* seccion de clases disponibles*/
+
+.clases{
+    padding-top: 60px;
+    width: 100%;
+}
+
+.clases h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: orange;
+    width: 100%;
+}
+
+.galeria_clases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.clase_de {
+    width: 30%;
+    text-align: center;
+    padding: 25px;
+}
+
+.clase_de img {
+    height: 150px;
+}
+
+.clase_de p {
+    padding: 10px 40px;
+}
+
+
+/*seccion de sedes y direcciones*/
+
+
+.sedes {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.sedes h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: orange;
+    width: 100%;
+}
+
+.galeria_casas {
+    display: block;
+    width: 100%;
+}
+
+.local {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.sede_1 {
+    background-image: url(multimedia/img/sala_gimansio.jpg);
+    height: 300px;
+    background-size: cover;
+}
+
+.sede_1 h3 {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    width: 60%;
+    padding: 35px 35px 5px 95px;
+}
+
+.sede_2 {
+    background-image: url(multimedia/img/sala_sede_2.jpg);
+    height: 300px;
+    background-size: cover;
+}
+
+.sede_2 h3 {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    width: 60%;
+    padding: 35px 35px 5px 95px;
+}
+
+
+.local iframe {
+    height: 200px;
+    width: 100%;
+}
+
+
+/*seccion nosotros*/
+
+.nosotros {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.nosotros h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: orange;
+    width: 100%;
+}
+
+.nosotros img {
+    height: 200px;
+    margin: 30px;
+
+}
+.nosotros h3 {
+    padding: 30px;
+}
+
+.nosotros iframe {
+    margin-bottom: 40px;
+}
+
+.somos { 
+    text-align: center;
+    padding: 40px;
+}
+
+/* footer*/
+
+footer {
+    display: flex;
+    background-color: orange;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    height: 30px;
+}
+
+.formulario_contacto {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.formulario_contacto h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+    background-color: orange;
+    width: 100%;
+}
+
+.formulario_contacto img {
+    padding: 20px;
+}
