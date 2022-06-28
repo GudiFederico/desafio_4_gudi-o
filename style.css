@@ -47,6 +47,7 @@ header {
     justify-content: space-around;
 }
 
+
 .nav_menu li a {
     text-decoration: none;
     color: orange;
@@ -54,6 +55,7 @@ header {
 
 .nav_menu li :hover {
     background-color: rgb(104, 102, 102);
+    border-radius: 10px;
 }
 
 
@@ -110,23 +112,43 @@ header {
 
 .galeria_promos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 40px;
 }
 
 .oferta {
-    text-align: center;
+    height: 300px;
+    width: 300px;
     padding: 25px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: orange;
+    border-radius: 20px;
+    border: 5px solid orange;
 }
 
 .oferta img {
-    height: 200px;
-    padding: 15px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
 }
 
 .oferta p {
     padding: 15px;
+    position: absolute;
+    width: auto;
+    transition: all 1s ease;
+    color: white;
 }
+
+.oferta img:hover {
+    transform: translateY(-400px);
+}
+
 
 
 
@@ -149,21 +171,56 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     padding: 40px;
 }
 
 .clase_de {
-    width: 30%;
     text-align: center;
     padding: 25px;
+    margin: 10px 30px;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+    background-color: orange;
+    border-radius: 20px;
+    border: 5px solid orange;
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clase_de img {
-    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .clase_de p {
     padding: 10px 40px;
+    position: absolute;
+    transition: all 1s ease;
+    color: black;
+    z-index: 1;
+    transition: all 0.5 ease-in;
+    visibility: hidden;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+.clase_de:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.clase_de:hover p {
+    visibility: visible;
 }
 
 
@@ -225,6 +282,12 @@ header {
 .local iframe {
     height: 200px;
     width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(2);
+    height: 300px;
 }
 
 
